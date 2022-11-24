@@ -14,22 +14,22 @@ from utlities.utlis import Home
 class Test_qamarket:
 
     # Test case1:Login with valid credentials
-    @pytest.fixture(params=Home.readDataLogin('test1'))
+    @pytest.fixture(params=Home.readDataLogin('test1')) # the name of the test which is mentioned under the xl sheet
     def getdata(self,request):
         return request.param
 
 # Test case2:Login with invalid credentials
-    @pytest.fixture(params=Home.readDataLogin('test2'))
+    @pytest.fixture(params=Home.readDataLogin('test2')) # the name of the test which is mentioned under the xl sheet
     def getdata1(self,request):
         return request.param
 
 # Test case3:Login with only username
-    @pytest.fixture(params=Home.readDataLogin('test3'))
+    @pytest.fixture(params=Home.readDataLogin('test3')) # the name of the test which is mentioned under the xl sheet
     def getdata2(self,request):
         return request.param
 
 # Test case4:Login with only password
-    @pytest.fixture(params=Home.readDataLogin('test4'))
+    @pytest.fixture(params=Home.readDataLogin('test4')) # the name of the test which is mentioned under the xl sheet
     def getdata3(self,request):
         return request.param
 
