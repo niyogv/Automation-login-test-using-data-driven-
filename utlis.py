@@ -8,7 +8,7 @@ class Home:
 
     @staticmethod
     def readDataLogin(test_case_name): # login test data
-        book=openpyxl.load_workbook('/Users/aicumen-dev/Downloads/data.xlsx')
+        book=openpyxl.load_workbook('/path/to/excel/data.xlsx')
         dict={}
         sheet=book.get_sheet_by_name('login')
         rcount=sheet.max_row
