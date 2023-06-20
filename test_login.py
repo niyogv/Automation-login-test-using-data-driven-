@@ -1,5 +1,5 @@
 # This is a test automation script in python
-# Application name:qamarket.moiverse.io
+# Application name:
 # Programmer name : Niyog v
 # Date of programming : 2 feb 2022
 #
@@ -35,7 +35,7 @@ class Test_qamarket:
 
     def test_1(self,getdata):
         self.driver=webdriver.Chrome(executable_path='/Applications/chromedriver')
-        self.driver.get('https://qamarket.moiverse.io/')
+        self.driver.get('')
         self.driver.maximize_window()
         self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[2]/div').click()
         print(self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[10]/div/div[1]/div[1]').text)
@@ -56,7 +56,7 @@ class Test_qamarket:
 
     def test_2(self,getdata1):
         self.driver=webdriver.Chrome(executable_path='/Applications/chromedriver')
-        self.driver.get('https://qamarket.moiverse.io/')
+        self.driver.get('')
         self.driver.maximize_window()
         self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[2]/div').click()
         user=self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[10]/div/div[2]/div/div/div/div[2]/div/div/input')
@@ -76,7 +76,7 @@ class Test_qamarket:
 
     def test_3(self,getdata2):
         self.driver=webdriver.Chrome(executable_path='/Applications/chromedriver')
-        self.driver.get('https://qamarket.moiverse.io/')
+        self.driver.get('')
         self.driver.maximize_window()
         self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[2]/div').click()
         user=self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[10]/div/div[2]/div/div/div/div[2]/div/div/input')
@@ -112,7 +112,7 @@ class Test_qamarket:
 
     def test_5(self):
         self.driver=webdriver.Chrome(executable_path='/Applications/chromedriver')
-        self.driver.get('https://qamarket.moiverse.io/')
+        self.driver.get('')
         self.driver.maximize_window()
         self.driver.find_element_by_xpath('//*[@id="root"]/div[1]/div[1]/div[2]/div').click()
         self.driver.find_element_by_xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained']").click()
